@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підрахунок слів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#" class="logo-text">Author</a>
+            <div class="author-info">
+                <img src="author.jpg" alt="Фото автора" width="100">
+                <p>Автор: Гордійчук Василь</p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="gcd.html">НСД</a></li>
+            <li><a href="duplicates.html">Повторення</a></li>
+            <li><a href="temperature.html">Конвертер °C → K</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Підрахунок слів</h2>
+        <textarea id="textInput" placeholder="Введіть текст"></textarea>
+        <button onclick="countWords()">Підрахувати</button>
+        <p id="wordCountResult"></p>
+    </div>
+    <script src="wordcount.js"></script>
+</body>
+</html>
