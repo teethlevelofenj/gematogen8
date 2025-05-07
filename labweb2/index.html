@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Фільтр продуктів + модальне вікно</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Фільтрація предметів</h2>
+  <select onchange="filterProductsByTag(this.value)">
+    <option value="all">Усі</option>
+    <option value="1">Сила</option>
+    <option value="2">Реген HP</option>
+    <option value="3">Інтелект</option>
+    <option value="4">Швидкість</option>
+  </select>
+
+  <div id="product-container"></div>
+
+  <!-- Модальне вікно -->
+  <div id="myModal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <p>Добрий ранок</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
